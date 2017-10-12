@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-nav {
+  color: black;
+  display: inline-block;
+
+}
+
+ul li .nav {
+  color: black;
+
+}
+body {
+background-color: #f1f1f1;
+
+}
