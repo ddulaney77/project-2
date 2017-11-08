@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin:0;
+}
+.main-nav {
+  margin-top: 1.5em;
+}
+
+.main-header {
+  padding-top: 2em;
+}
+
+.main-header
+.main-nav {
+display: flex;
+flex-direction: column;
+color: darkgrey;
+font-family: "Rancho",sans-serif;
+font-size: 1.4em;
+}
+
+ a {
+  text-align: center;
+  color: darkgrey;
+  font-weight:400;
+  padding: .4em;
+  text-decoration: none;
+
+}
+.name  {
+  width: 110px;
+  font-weight: bold;
+  font-family: "Rancho",sans-serif;
+  text-shadow: 4px 2px 3px lightblue;
+  color: grey;
+  text-align: center;
+}
+.name a
+.main-nav a{
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav li{
+  list-style: none;
+}
+.main-nav a:hover {
+  color: white;
+  border-bottom: 1px solid aqua;
+}
+
+.name:hover {
+  color: darkgrey;
+  border-bottom: 1px solid darkgrey;
+}
+
+#home {
+  border-bottom: 1px solid orange;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  border-radius: 10%;
+}
+
+.profile p {
+  font-size: 1.4em;
+  font-family: "Rancho",sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding:10px;
+
+}
+
+.container {
+  font-family: "Dosis",sans-serif;
+  text-align: center;
+  flex: 1;
+}
+.container p {
+  font-size: 1.4em;
+}
+img {
+  max-width:100%;
+}
+
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#portfolio {
+  font-size: .7em;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+  #contact {
+    text-align: center;
+    font-family: "Dosis",sans-serif;
+    font-size: 1.4em;
+    margin-top: 5px;
+    border-top: 1px solid lightgrey;
+  }
+
+span {
+  font-weight: bold;
+}
+/* media queries  */
+
+@media (min-width: 768px) {
+.main-header
+.container {
+  width:90%;
+  margin: 0 auto;
+}
+.main-header
+.main-nav {
+  display: flex;
+  height: 200px;
+  justify-content: flex-end;
+  font-size: 1.6em;
+  border-bottom: transparent;
+  }
+}
+.main-header {
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-nav {
+  margin-top: 3em;
+}
+
+.name {
+  font-size: 1.6em;
+  width: 140px;
+  margin: auto;
+}
+
+a li {
+  font-size: 1.6em;
+}
+
+.main-nav a:hover {
+  color: white;
+  border-bottom-color: aqua;
+}
+
+.name:hover {
+  color: slategrey;
+  border-bottom-color: aqua;
+}
+
+#home  {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+
+#home p {
+  order: -1;
+  text-align: center;
+  font-family: "Rancho", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.box {
+  flex: 1 250px;
+  margin: 10px;
+}
+
+
+@media (min-width: 1024px) {
+.main-header {
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: transparent;
+}
+}
+.main-header
+.container {
+  width: 80%;
+  max-width: 1150px;
+}
+.main-nav {
+  flex-direction: row;
+  border-bottom: transparent;
+  margin-top: 0;
+}
+
+
+.main-nav li {
+  margin-left: .65em;
+  margin-right: .65em;
+}
+
+.name:hover {
+  color: darkgrey;
+  border-bottom: 1px solid aqua;
+}
+
+
+
+#home p {
+  order:-1;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.box {
+  flex: 1 250px;
+  margin:10px;
+}
