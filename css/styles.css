@@ -3,38 +3,55 @@
 }
 
 body {
-  width:90%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin:0;
 }
 .main-nav {
   margin-top: 1.5em;
 }
 
-
-.main-header
- .main-nav {
-display: block;
-text-align: center;
-font-size: 1.8em;
-color: darkgrey;
-font-weight: 300;
-padding:.4em;
-border-bottom:1px solid #f1f1f1;
-font-family: "Rancho",sans-serif;
+.main-header {
+  padding-top: 2em;
 }
 
-.name {
+.main-header
+.main-nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: darkgrey;
+font-family: "Rancho",sans-serif;
+font-size: 1.4em;
+}
+
+ a {
   text-align: center;
-  font-size: 1.8em;
+  color: darkgrey;
+  font-weight:400;
+  padding: .4em;
+  text-decoration: none;
+
+}
+ .name  {
+  width: 110px;
   font-weight: bold;
   font-family: "Rancho",sans-serif;
   text-shadow: 4px 2px 3px lightblue;
   color: grey;
 }
-a li {
-  font-size: 1.8em;
+
+.name a
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
 }
 
+.main-nav li{
+  list-style: none;
+}
 .main-nav a:hover {
   color: white;
   border-bottom: 1px solid aqua;
@@ -44,9 +61,8 @@ a li {
   color: darkgrey;
   border-bottom: 1px solid darkgrey;
 }
-.profile {
-  display: flex;
-  flex-direction: column;
+
+#home {
   border-bottom: 1px solid orange;
 }
 
@@ -59,38 +75,33 @@ a li {
 }
 
 .profile p {
-  font-size: 1.8em;
-  padding: 20px;
-  margin: 10px;
+  font-size: 1.4em;
   font-family: "Rancho",sans-serif;
+  text-align: center;
+  margin: 20px;
+  padding:10px;
+
 }
 
 .container {
   font-family: "Dosis",sans-serif;
   text-align: center;
+  flex: 1;
 }
 .container p {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 img {
   max-width:100%;
 }
 
-ul  {
-  color: darkgrey;
-  list-style: none;
-}
-li {
-  list-style: none;
-}
 
-a  {
-  color: darkgrey;
-  text-decoration: none;
+h2 {
+  text-transform: uppercase;
+  font-size: 1.4em;
 }
 
 #portfolio {
-  font-size: .7em;
   font-weight: bold;
   text-align: center;
   font-family: "Dosis", sans-serif;
@@ -101,34 +112,49 @@ a  {
     font-size: 1.4em;
     margin-top: 5px;
     border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
   }
-  h2 {
-    font-size: 1em;
-  }
+
 span {
   font-weight: bold;
+}
+
+.bottom li a {
+  list-style: none;
 }
 /* media queries  */
 
 @media (min-width: 768px) {
 .main-header
-.main-nav a {
+.container {
+  width:90%;
+  margin: 0 auto;
+}
+.main-header
+.main-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 1.8em;
-  padding: 0;
+  height: 200px;
+  justify-content: flex-end;
+  font-size: 1.6em;
   border-bottom: transparent;
   }
 }
+.main-header {
+  flex-direction: row;
+  align-items: center;
+}
 
 .main-nav {
-  margin-top: 0;
+  margin-top: 3em;
+}
+
+.name {
+  font-size: 1.6em;
+  width: 140px;
+  margin: auto;
 }
 
 a li {
-  text-decoration: none;
   font-size: 1.6em;
 }
 
@@ -142,14 +168,14 @@ a li {
   border-bottom-color: aqua;
 }
 
-.profile  {
+#home  {
   display: flex;
   flex-direction: row;
   border-top: 1px solid orange;
   border-bottom: 1px solid orange;
 }
 
-.profile p {
+#home p {
   order: -1;
   text-align: center;
   font-family: "Rancho", sans-serif;
@@ -168,22 +194,35 @@ a li {
   margin: 10px;
 }
 
+.bottom-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 
 @media (min-width: 1024px) {
 .main-header {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-bottom: transparent;
 }
 }
-
-.main-nav {
-  border-bottom: transparent;
+.main-header
+.container {
+  width: 80%;
+  max-width: 1150px;
 }
-.name {
-  padding: 0;
-  margin: 0;
+.main-nav {
+  flex-direction: row;
+  border-bottom: transparent;
+  margin-top: 0;
+}
+
+
+.main-nav li {
+  margin-left: .65em;
+  margin-right: .65em;
 }
 
 .name:hover {
@@ -191,14 +230,9 @@ a li {
   border-bottom: 1px solid aqua;
 }
 
-a {
-  margin-right:10px;
-  padding: 10px;
-}
-.profile {
-  display: flex;
-}
-.profile p {
+
+
+#home p {
   order:-1;
   text-align: center;
 }
