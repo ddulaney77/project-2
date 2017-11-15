@@ -6,45 +6,34 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin:0;
-}
-.main-nav {
-  margin-top: 1.5em;
+  margin:0 auto;
 }
 
-.main-header {
-  padding-top: 2em;
-}
 
-.main-header
-.main-nav {
+.main-header, .main-nav {
 display: flex;
 flex-direction: column;
 align-items: center;
 color: darkgrey;
 font-family: "Rancho",sans-serif;
-font-size: 1.4em;
+font-size: 1.2em;
 }
 
  a {
-  text-align: center;
   color: darkgrey;
   font-weight:400;
-  padding: .4em;
   text-decoration: none;
 
 }
  .name  {
-  width: 110px;
   font-weight: bold;
   font-family: "Rancho",sans-serif;
   text-shadow: 4px 2px 3px lightblue;
   color: grey;
 }
 
-.name a
-.main-nav a {
-  text-align: center;
+.name a, .main-nav a {
+  align-items: center;
   display: block;
   padding: 10px 15px;
 }
@@ -62,8 +51,11 @@ font-size: 1.4em;
   border-bottom: 1px solid darkgrey;
 }
 
-#home {
+.profile {
   border-bottom: 1px solid orange;
+  display:block;
+  flex-direction: column;
+  margin:50px;
 }
 
 .profile-image {
@@ -72,17 +64,16 @@ font-size: 1.4em;
   background-color: lightgrey;
   border: 1px solid darkgrey;
   border-radius: 10%;
+  align-self: center;
 }
 
 .profile p {
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
   text-align: center;
-  margin: 20px;
-  padding:10px;
-
+  margin: 30px;
+  padding:20px;
 }
-
 .container {
   font-family: "Dosis",sans-serif;
   text-align: center;
@@ -94,7 +85,6 @@ font-size: 1.4em;
 img {
   max-width:100%;
 }
-
 
 h2 {
   text-transform: uppercase;
@@ -118,24 +108,30 @@ h2 {
 span {
   font-weight: bold;
 }
-
-.bottom li a {
+.bottom-contact {
+  display: flex;
+  text-decoration: none;
   list-style: none;
+}
+ul .bottom   {
+  list-style: none;
+}
+.bottom a {
+  list-style: none;
+  text-decoration: none;
 }
 /* media queries  */
 
 @media (min-width: 768px) {
-.main-header
-.container {
+.main-header, .container {
   width:90%;
   margin: 0 auto;
 }
-.main-header
-.main-nav {
+.main-header, .main-nav {
   display: flex;
   height: 200px;
   justify-content: flex-end;
-  font-size: 1.6em;
+  font-size: 1.4em;
   border-bottom: transparent;
   }
 }
@@ -149,13 +145,13 @@ span {
 }
 
 .name {
-  font-size: 1.6em;
+  font-size: 1.4em;
   width: 140px;
   margin: auto;
 }
 
 a li {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .main-nav a:hover {
@@ -168,17 +164,20 @@ a li {
   border-bottom-color: aqua;
 }
 
-#home  {
+.profile  {
   display: flex;
   flex-direction: row;
   border-top: 1px solid orange;
   border-bottom: 1px solid orange;
+  flex: 1;
 }
 
-#home p {
+.profile p {
   order: -1;
   text-align: center;
   font-family: "Rancho", sans-serif;
+  flex: 1 250px;
+  margin: 10px;
 }
 .container {
   display: flex;
@@ -194,7 +193,7 @@ a li {
   margin: 10px;
 }
 
-.bottom-contact {
+.bottom-contact, .bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -208,8 +207,7 @@ a li {
   border-bottom: transparent;
 }
 }
-.main-header
-.container {
+.main-header, .container {
   width: 80%;
   max-width: 1150px;
 }
@@ -219,20 +217,12 @@ a li {
   margin-top: 0;
 }
 
-
-.main-nav li {
-  margin-left: .65em;
-  margin-right: .65em;
-}
-
 .name:hover {
   color: darkgrey;
   border-bottom: 1px solid aqua;
 }
 
-
-
-#home p {
+.profile p {
   order:-1;
   text-align: center;
 }
