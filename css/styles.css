@@ -29,17 +29,23 @@ font-size: 1.2em;
   font-family: "Rancho",sans-serif;
   text-shadow: 4px 2px 3px lightblue;
   color: grey;
+  text-align: center;
+}
+.name a {
+  text-align: center;
 }
 
-.name a, .main-nav a {
-  align-items: center;
+ .main-nav a {
+  text-align: center;
   display: block;
-  padding: 10px 15px;
+  padding:20px;
+  margin:30px;
 }
 
 .main-nav li{
   display:block;
   list-style: none;
+  text-align: center;
 }
 .main-nav a:hover {
   color: lightgrey;
@@ -63,7 +69,6 @@ font-size: 1.2em;
   background-color: lightgrey;
   border: 1px solid darkgrey;
   border-radius: 10%;
-  align-self: center;
 }
 
 .profile p {
@@ -107,14 +112,22 @@ h2 {
 span {
   font-weight: bold;
 }
-
+.bottom-contact {
+  display: flex;
+  flex-direction: row;
+}
 li .bottom-contact   {
   list-style: none;
-  display: none;
+
 }
 a .bottom-contact  {
   list-style: none;
   text-decoration: none;
+}
+li .end {
+  display:none;
+  list-style: none;
+
 }
 /* media queries  */
 
@@ -161,13 +174,13 @@ a li {
 }
 
 .profile  {
+  display: inline;
   border-top: 1px solid orange;
   border-bottom: 1px solid orange;
   flex: 1;
 }
 
 .profile p {
-  order: -1;
   text-align: center;
   font-family: "Rancho", sans-serif;
   flex: 1 300px;
@@ -187,12 +200,17 @@ a li {
   margin: 10px;
 }
 
-.bottom-contact, .bottom {
+.bottom-contact {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+a .end {
+  display: none;
+}
+h3 {
+  display: inline;
+}
 
 @media (min-width: 1024px) {
 .main-header {
@@ -231,4 +249,12 @@ a li {
 .box {
   flex: 1 250px;
   margin:10px;
+}
+
+a .end {
+  display: none;
+}
+li .end {
+  display:row;
+  justify-content: space-between;
 }
