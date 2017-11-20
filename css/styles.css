@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width:90%;
   margin:0 auto;
 }
 
@@ -22,18 +23,17 @@ font-size: 1.2em;
   color: darkgrey;
   font-weight:400;
   text-decoration: none;
+  display:block;
 
 }
- .name  {
+ a.name  {
   font-weight: bold;
   font-family: "Rancho",sans-serif;
   text-shadow: 4px 2px 3px lightblue;
   color: grey;
   text-align: center;
 }
-.name a {
-  text-align: center;
-}
+
 
  .main-nav a {
   text-align: center;
@@ -69,6 +69,7 @@ font-size: 1.2em;
   background-color: lightgrey;
   border: 1px solid darkgrey;
   border-radius: 10%;
+  align-self: center;
 }
 
 .profile p {
@@ -116,19 +117,19 @@ span {
   display: flex;
   flex-direction: row;
 }
-li .bottom-contact   {
-  list-style: none;
+h4  {
+  display: inline;
+}
 
+ ul.end {
+   list-style: none;
+   display:none;
+   flex-direction: row;
 }
-a .bottom-contact  {
-  list-style: none;
-  text-decoration: none;
+ul.end li {
+  display: none;
 }
-li .end {
-  display:none;
-  list-style: none;
 
-}
 /* media queries  */
 
 @media (min-width: 768px) {
@@ -174,13 +175,12 @@ a li {
 }
 
 .profile  {
-  display: inline;
   border-top: 1px solid orange;
   border-bottom: 1px solid orange;
   flex: 1;
 }
 
-.profile p {
+p.profile  {
   text-align: center;
   font-family: "Rancho", sans-serif;
   flex: 1 300px;
@@ -205,11 +205,21 @@ a li {
   flex-direction: row;
   justify-content: space-between;
 }
-a .end {
+h4   {
   display: none;
 }
-h3 {
-  display: inline;
+
+ ul.end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding:10px;
+  margin:15px;
+}
+li.end {
+  padding: 10px;
+  margin: 15px;
 }
 
 @media (min-width: 1024px) {
@@ -234,7 +244,7 @@ h3 {
   border-bottom: 1px solid aqua;
 }
 
-.profile p {
+p.profile  {
   order:-1;
   text-align: center;
 }
@@ -251,10 +261,9 @@ h3 {
   margin:10px;
 }
 
-a .end {
-  display: none;
-}
-li .end {
-  display:row;
+div.bottom-contact,
+ul.end {
+  flex-direction: row;
   justify-content: space-between;
+  list-style: none;
 }
