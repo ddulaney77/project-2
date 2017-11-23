@@ -77,6 +77,7 @@ font-size: 1.2em;
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
   text-align: center;
+  order: -1;
   margin: 30px;
   padding:20px;
 }
@@ -184,6 +185,7 @@ a li {
 
 p.profile  {
   text-align: center;
+  order:-1;
   font-family: "Rancho", sans-serif;
   flex: 1 300px;
   margin: 10px;
@@ -213,7 +215,7 @@ a.top {
 }
 
  ul.end {
-  display: inline;
+  display: inline-block;
   list-style: none;
   padding:10px;
   margin:15px;
@@ -229,7 +231,7 @@ a.top {
 }
 
 .main-header, .container, .bottom-contact {
-  width: 80%;
+  width: 90%;
   max-width: 1150px;
 }
 .main-nav {
@@ -266,10 +268,11 @@ p.profile  {
   justify-content: space-between;
   list-style: none;
 }
+
 a.top {
   display: none;
 }
 ul.end {
-  display: inline;
+  display: inline-block;
   list-style: none;
 }
