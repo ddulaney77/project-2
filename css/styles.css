@@ -23,8 +23,6 @@ font-size: 1.2em;
   color: darkgrey;
   font-weight:400;
   text-decoration: none;
-  display: block;
-
 }
  a.name  {
   font-weight: bold;
@@ -57,10 +55,6 @@ font-size: 1.2em;
   border-bottom: 1px solid darkgrey;
 }
 
-#home.profile {
-  display: flex;
-  flex-direction: column;
-}
 
 img.profile-image {
   width: 200px;
@@ -68,14 +62,12 @@ img.profile-image {
   background-color: lightgrey;
   border: 1px solid darkgrey;
   border-radius: 10%;
-  margin: 0 auto;
 }
 
 #home.profile p {
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
   text-align: center;
-  margin: 0 auto;
   padding:10px;
 }
 .container {
@@ -112,22 +104,12 @@ h2 {
 span {
   font-weight: bold;
 }
-.bottom-contact {
-  display: flex;
-}
- a.top {
-  display: inline;
-  text-align: right;
-  font-weight: 300;
-}
 
- ul.end li {
+
+ ul.end  {
    display: hidden;
 }
 
-a.bottom-contact, a.top {
-  display: inline;
-}
 
 /*media queries*/
 
@@ -177,21 +159,20 @@ a li {
 }
 
 #home.profile  {
+  display: flex;
   border-top: 1px solid orange;
-  flex: 1;
-}
-
-#home.profile {
   font-family: "Rancho", sans-serif;
-  flex: 1 300px;
   margin: 10px;
 }
 
+#home.profile-image {
+  flex: 1 50%;
+}
 #home.profile p {
+  flex: 1 50%;
   order:-1;
 }
 
-  )
 .container {
   display: flex;
   flex-direction: row;
@@ -206,7 +187,7 @@ a li {
   margin: 10px;
 }
 
-.bottom-contact {
+/*.bottom-contact {
   display: flex;
   justify-content: space-between;
 }
@@ -215,7 +196,7 @@ a.bottom-contact, ul.end li{
 }
 
 a.top {
-  display: hidden;
+  display: none;
 }
 
  ul.end  {
@@ -225,7 +206,7 @@ a.top {
   list-style: none;
   padding:10px;
   margin:15px;
-}
+}*/
 
 
 @media (min-width: 1024px) {
@@ -268,7 +249,7 @@ p.profile  {
   margin:10px;
 }
 
-.bottom-contact,
+/*.bottom-contact,
 .end {
   display: flex;
   flex-direction: row;
@@ -289,4 +270,4 @@ ul.end li {
 }
 ul.end li, a.bottom-contact {
   display: inline;
-}
+}*/
