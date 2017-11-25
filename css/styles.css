@@ -23,7 +23,7 @@ font-size: 1.2em;
   color: darkgrey;
   font-weight:400;
   text-decoration: none;
-  display:block;
+  display: block;
 
 }
  a.name  {
@@ -39,8 +39,7 @@ font-size: 1.2em;
  .main-nav a {
   text-align: center;
   display: block;
-  padding:20px;
-  margin:30px;
+  padding:10px;
 }
 
 .main-nav li{
@@ -60,9 +59,7 @@ font-size: 1.2em;
 
 #home.profile {
   display: flex;
-  border-bottom: 1px solid orange;
   flex-direction: column;
-  margin:30px;
 }
 
 img.profile-image {
@@ -71,14 +68,14 @@ img.profile-image {
   background-color: lightgrey;
   border: 1px solid darkgrey;
   border-radius: 10%;
-  align-self: center;
+  margin: 0 auto;
 }
 
 #home.profile p {
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
   padding:10px;
 }
 .container {
@@ -117,20 +114,22 @@ span {
 }
 .bottom-contact {
   display: flex;
-  flex-direction: row;
 }
-
  a.top {
   display: inline;
   text-align: right;
+  font-weight: 300;
 }
 
- ul.end {
-   list-style: none;
-   display:none;
+ ul.end li {
+   display: hidden;
 }
 
-/* media queries  */
+a.bottom-contact, a.top {
+  display: inline;
+}
+
+/*media queries*/
 
 @media (min-width: 768px) {
 .main-header, .container {
@@ -140,7 +139,7 @@ span {
 .main-header, .main-nav {
   display: flex;
   height: 200px;
-  justify-content: flex-end;
+  justify-content: space-between;
   font-size: 1.4em;
   border-bottom: transparent;
   }
@@ -179,19 +178,17 @@ a li {
 
 #home.profile  {
   border-top: 1px solid orange;
-  border-bottom: 1px solid orange;
   flex: 1;
 }
 
 #home.profile {
-  flex-direction: row;
   font-family: "Rancho", sans-serif;
   flex: 1 300px;
   margin: 10px;
 }
 
 #home.profile p {
-  order: -1;
+  order:-1;
 }
 
   )
@@ -211,16 +208,20 @@ a li {
 
 .bottom-contact {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+}
+a.bottom-contact, ul.end li{
+  display: inline;
 }
 
 a.top {
-  display: none;
+  display: hidden;
 }
 
- ul.end li {
-  display: inline-block;
+ ul.end  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   padding:10px;
   margin:15px;
@@ -269,15 +270,23 @@ p.profile  {
 
 .bottom-contact,
 .end {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
 }
 
-a.top {
-  display: none;
-}
+
 ul.end {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
   list-style: none;
+}
+ul.end li {
+  Padding:15px;
+  margin:10px;
+}
+ul.end li, a.bottom-contact {
+  display: inline;
 }
