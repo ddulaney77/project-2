@@ -58,13 +58,14 @@ font-size: 1.2em;
   border-bottom: 1px solid darkgrey;
 }
 
-.profile {
+#home.profile {
+  display: flex;
   border-bottom: 1px solid orange;
   flex-direction: column;
-  margin:50px;
+  margin:30px;
 }
 
-.profile-image {
+img.profile-image {
   width: 200px;
   height: 200px;
   background-color: lightgrey;
@@ -73,13 +74,12 @@ font-size: 1.2em;
   align-self: center;
 }
 
-.profile p {
+#home.profile p {
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
   text-align: center;
-  order: -1;
-  margin: 30px;
-  padding:20px;
+  margin: 20px;
+  padding:10px;
 }
 .container {
   font-family: "Dosis",sans-serif;
@@ -177,19 +177,24 @@ a li {
   border-bottom-color: aqua;
 }
 
-.profile  {
+#home.profile  {
   border-top: 1px solid orange;
   border-bottom: 1px solid orange;
   flex: 1;
 }
 
-p.profile  {
-  text-align: center;
-  order:-1;
+#home.profile {
+  flex-direction: row;
   font-family: "Rancho", sans-serif;
   flex: 1 300px;
   margin: 10px;
 }
+
+#home.profile p {
+  order: -1;
+}
+
+  )
 .container {
   display: flex;
   flex-direction: row;
@@ -214,7 +219,7 @@ a.top {
   display: none;
 }
 
- ul.end {
+ ul.end li {
   display: inline-block;
   list-style: none;
   padding:10px;
