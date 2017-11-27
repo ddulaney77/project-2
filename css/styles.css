@@ -63,11 +63,14 @@ img.profile-image {
   border: 1px solid darkgrey;
   border-radius: 10%;
 }
-
+#home.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #home.profile p {
   font-size: 1.4em;
   font-family: "Rancho",sans-serif;
-  text-align: center;
   padding:10px;
 }
 .container {
@@ -105,7 +108,9 @@ span {
   font-weight: bold;
 }
 
-
+a.top {
+  color: orange;
+}
  ul.end  {
    display: hidden;
 }
@@ -160,6 +165,7 @@ a li {
 
 #home.profile  {
   display: flex;
+  flex-direction: row;
   border-top: 1px solid orange;
   font-family: "Rancho", sans-serif;
   margin: 10px;
@@ -249,7 +255,7 @@ p.profile  {
   margin:10px;
 }
 
-/*.bottom-contact,
+.bottom-contact,
 .end {
   display: flex;
   flex-direction: row;
@@ -270,4 +276,4 @@ ul.end li {
 }
 ul.end li, a.bottom-contact {
   display: inline;
-}*/
+}
