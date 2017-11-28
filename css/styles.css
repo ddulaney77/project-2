@@ -130,7 +130,7 @@ a.top {
   font-size: 1.4em;
   border-bottom: transparent;
   }
-}
+
 .main-header {
   flex-direction: row;
   align-items: center;
@@ -194,8 +194,8 @@ a li {
 }
 
 .bottom-contact {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 a.bottom-contact, ul.end li{
   display: inline;
@@ -213,14 +213,13 @@ a.top {
   padding:10px;
   margin:15px;
 }
-
+}
 
 @media (min-width: 1024px) {
 .main-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 }
 
 .main-header, .container, .bottom-contact {
@@ -276,4 +275,5 @@ ul.end li {
 }
 ul.end li, a.bottom-contact {
   display: inline;
+}
 }
