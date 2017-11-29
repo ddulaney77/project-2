@@ -108,12 +108,14 @@ span {
   font-weight: bold;
 }
 .bottom-contact {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
 }
 a.top {
   color: lightgrey;
+  display: inline;
+  margin-top: 20px;
 }
  ul.end  {
    display: none;
@@ -192,11 +194,11 @@ a li {
 }
 
 .bottom-contact {
-display: flex;
+display: inline-flex;
 justify-content: space-between;
 }
 
-.bottom-contact {
+a.bottom-contact {
   display: inline;
 }
 
@@ -209,6 +211,18 @@ a.top {
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+}
+.bottom-contact li {
+  padding: 12px;
+  margin: auto;
+}
+a.bottom-contact {
+  padding: 0;
+  margin: 0 auto;
+}
+h3 {
+  padding: 0
+  margin: 0 auto;
 }
 }
 
@@ -252,7 +266,7 @@ p.profile  {
 
 .bottom-contact,
 ul.end {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
@@ -262,7 +276,5 @@ ul.end li {
   Padding:15px;
   margin:10px;
 }
-ul.end li, a.bottom-contact {
-  display: inline-block;
-}
+
 }
