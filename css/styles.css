@@ -17,7 +17,7 @@ flex-direction: column;
 align-items: center;
 color: darkgrey;
 font-family: "Rancho",sans-serif;
-font-size: 1.2em;
+font-size: 1.4em;
 }
 
  a {
@@ -32,6 +32,7 @@ font-size: 1.2em;
   color: grey;
   text-align: center;
   display: block;
+  font-size: 1.4em;
 }
 
 
@@ -133,18 +134,15 @@ a.top {
   justify-content: space-between;
   font-size: 1.4em;
   }
-.main-nav li {
 
-}
-
-.main-nav {
-  margin-top: 3em;
+.main-header {
+  display: inline-block;
 }
 
 a.name {
   font-size: 1.4em;
   width: 140px;
-  display: block;
+  display:block;
   margin: auto;
   text-align: center;
 }
@@ -197,7 +195,8 @@ a li {
 display: flex;
 justify-content: space-between;
 }
-a.bottom-contact, ul.end li{
+
+.bottom-contact {
   display: inline;
 }
 
@@ -205,13 +204,11 @@ a.top {
   display: none;
 }
 
- ul.end  li {
+ ul.end  {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  padding:10px;
-  margin:15px;
 }
 }
 
@@ -254,25 +251,18 @@ p.profile  {
 }
 
 .bottom-contact,
-.end {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-}
-
-
 ul.end {
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-between;
   list-style: none;
 }
+
 ul.end li {
   Padding:15px;
   margin:10px;
 }
 ul.end li, a.bottom-contact {
-  display: inline;
+  display: inline-block;
 }
 }
