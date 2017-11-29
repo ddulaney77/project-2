@@ -222,7 +222,7 @@ a.bottom-contact {
 }
 h3 {
   padding: 0
-  margin: 0 auto;
+  margin-top: 15px;
 }
 }
 
@@ -276,5 +276,7 @@ ul.end li {
   Padding:15px;
   margin:10px;
 }
-
+h3 {
+  margin-top: 40px;
+}
 }
